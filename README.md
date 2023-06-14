@@ -25,7 +25,7 @@ Please cite the following paper in publications using this dataset. You can also
 - This file contains cross-validation splits. See also [Cross-Validation Splits](#cross-validation-splits) below.
 
 `mwe_list`
-- This directory contains manually collected lists of MWEs, `mwe.tsv` and `proper_mwe.tsv`, where the latter contains proper noun phrases. Sequences of SUWs that match any MWEs in the lists are chunked in the step of MWE annotation (see Section 3.3 of the paper). `|` in the MWEs denote a boundary between SUWs.
+- This directory contains manually collected lists of MWEs, `mwe.txt` and `proper_mwe.txt`, where the latter contains proper noun phrases. Sequences of SUWs that match any MWEs in the lists are chunked in the step of MWE annotation (see Section 3.3 of the paper). `|` in the MWEs denote a boundary between SUWs.
 
 ## Data Format
 
