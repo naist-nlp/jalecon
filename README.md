@@ -25,7 +25,7 @@ Please cite the following paper in publications using this dataset. You can also
 - This file contains cross-validation splits. See also [Cross-Validation Splits](#cross-validation-splits) below.
 
 `mwe_list`
-- This directory contains manually collected lists of MWEs, `mwe.txt` and `proper_mwe.txt`, where the latter contains proper noun phrases. Sequences of SUWs that match any MWEs in the lists are chunked in the step of MWE annotation (see Section 3.3 of the paper). `|` in the MWEs denote a boundary between SUWs.
+- This directory contains manually collected lists of MWEs, `mwe.txt` and `proper_mwe.txt`, where the latter contains proper noun phrases. Sequences of SUWs that match any MWEs in the lists are chunked in the step of MWE annotation (see Section 3.3 of the paper). `|` in the MWEs denotes a boundary between SUWs.
 
 ## Data Format
 
@@ -53,8 +53,8 @@ Yahoo!ニュース	17:20	P	-	-	-	-	-
 The first line is in the format `<ID>\t<sentence_num>\t<sentence>`:
 
 - `ID` is the unique ID of the sentence in the format `<genre>-<block>-<line>`, where `genre` identifies the genre (`news` or `gov`); `block` is a unit annotated by the same set of annotators; `line` is the line number in the block.
-- `sentence_num` is the sentence number in the sequence to which the sentence belongs. This is useful when you want to know where each sequence starts or ends.
-- `sentence` is the sentence itself segmented int SUWs (denoted with `|`).
+- `sentence_num` is the sentence number in the sequence to which the sentence belongs. This is useful for knowing where each sequence starts and ends.
+- `sentence` is the sentence itself segmented into SUWs (delimited with `|`).
 
 The subsequent `<word_i>` lines provide information about each word in the sentence in the format `<word>\t<position>\t<ignore>\t<easy>\t<not_easy>\t<diff>\t<very_diff>\t<complexity>`:
 
@@ -67,7 +67,7 @@ When the word is to be ignored, the fields `easy`, `not_easy`, `diff`, `very_dif
 
 ## Cross-Validation Splits
 
-The file `cv_splits.json` contains cross-validation splits that we have used for experiment in the paper [TODO add reference], and which can therefore serve to replicate it, or easily compare our results with other systems.
+The file `cv_splits.json` contains cross-validation splits that we have used for the experiment in our paper, and which can therefore be used to replicate it or to easily compare our results with other systems.
 
 We have used:
 - 5 folds,
