@@ -94,7 +94,7 @@ Each split's training or validation set is a list of IDs (first tab-separated fi
 
 ### News Genre
 
-The Japanese-English development set of [the WMT22 General Machine Translation Task](https://www.statmt.org/wmt22/translation-task.html) (Kocmi et al. 2022[^1]) was used.
+We used data from the Japanese-English development set of [the WMT22 General Machine Translation Task](https://www.statmt.org/wmt22/translation-task.html) (Kocmi et al. 2022[^1]).
 
 [^1]: Tom Kocmi, Rachel Bawden, Ondřej Bojar, Anton Dvorkovich, Christian Federmann, Mark Fishel, Thamme Gowda, Yvette Graham, Roman Grund- kiewicz, Barry Haddow, Rebecca Knowles, Philipp Koehn, Christof Monz, Makoto Morishita, Masaaki Nagata, Toshiaki Nakazawa, Michal Novák, Martin Popel, and Maja Popović. 2022. Findings of the 2022 conference on machine translation (WMT22). In Proceedings of the Seventh Conference on Machine Translation (WMT), pages 1–45, Abu Dhabi, United Arab Emirates (Hybrid). Association for Computational Linguistics
 
