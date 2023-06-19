@@ -25,11 +25,11 @@ Please cite the following paper in publications using this dataset. You can also
 - This file contains cross-validation splits. See also [Cross-Validation Splits](#cross-validation-splits) below.
 
 `mwe_list`
-- This directory contains manually collected lists of MWEs, `mwe.txt` and `proper_mwe.txt`; the former lists common noun phrases and the latter lists proper noun phrases. Sequences of SUWs that match any MWEs in the lists are chunked in the step of MWE annotation (see Section 3.3 of our paper). `|` in the MWEs denotes a boundary between SUWs.
+- This directory contains manually collected lists of ordinary MWEs in `mwe.tsv` and proper noun MWEs in `proper_mwe.tsv`. Sequences of SUWs that match any MWEs in the lists are chunked in the step of MWE annotation (see Section 3.3 of our paper). `|` in the MWEs denotes a boundary between SUWs.
 
 ## Data Format
 
-`ck.txt` and `non_ck.txt` are composed of sentences, each of which has the following format (terminated by a blank line):
+The files `ck.txt` and `non_ck.txt` are composed of sentences, each of which has the following format (terminated by a blank line):
 
 ```
 <ID>\t<sentence_num>\t<sentence>
@@ -67,7 +67,7 @@ When the word is to be ignored, the fields `easy`, `not_easy`, `diff`, `very_dif
 
 ## Cross-Validation Splits
 
-`cv_splits.json` contains cross-validation splits that we have used for the experiment in our paper, and which can therefore be used to replicate it or to easily compare our results with other systems.
+The file `cv_splits.json` contains cross-validation splits that we have used for the experiment in our paper, and which can therefore be used to replicate it or to easily compare our results with other systems.
 
 We have used:
 - 5 folds,
