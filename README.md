@@ -3,7 +3,7 @@
 
 JaLeCoN is a Dataset of **Ja**panese **Le**xical **Co**mplexity for **N**on-Native Readers. It can be used to train or evaluate Japanese lexical complexity prediction models.
 
-Please cite the following paper in publications using this dataset. You can also refer to it for details about the data and a baseline experiment.
+Please cite the following [paper](https://arxiv.org/abs/2306.17399) in publications using this dataset. You can also refer to it for details about the data and a baseline experiment.
 
 ```
 @inproceedings{ide2023,
@@ -25,7 +25,7 @@ Please cite the following paper in publications using this dataset. You can also
 - This file contains cross-validation splits. See also [Cross-Validation Splits](#cross-validation-splits) below.
 
 `mwe_list`
-- This directory contains manually collected lists of ordinary MWEs in `mwe.tsv` and proper noun MWEs in `proper_mwe.tsv`. Sequences of SUWs that match any MWEs in the lists are chunked in the step of MWE annotation (see Section 3.3 of our paper). `|` in the MWEs denotes a boundary between SUWs.
+- This directory contains manually collected lists of ordinary MWEs in `mwe.tsv` and proper noun MWEs in `proper_mwe.tsv`. Sequences of SUWs that match any MWEs in the lists are chunked in the step of MWE annotation (see Section 3.3 of [our paper](https://arxiv.org/abs/2306.17399)). `|` in the MWEs denotes a boundary between SUWs.
 
 ## Data Format
 
@@ -67,12 +67,12 @@ When the word is to be ignored, the fields `easy`, `not_easy`, `diff`, `very_dif
 
 ## Cross-Validation Splits
 
-The file `cv_splits.json` contains cross-validation splits that we have used for the experiment in our paper, and which can therefore be used to replicate it or to easily compare our results with other systems.
+The file `cv_splits.json` contains cross-validation splits that we have used for the experiment in [our paper](https://arxiv.org/abs/2306.17399), and which can therefore be used to replicate it or to easily compare our results with other systems.
 
 We have used:
 - 5 folds,
 - stratification by genre (News and Government),
-- grouping by sequence of sentences (see Section 3 in the paper).
+- grouping by sequence of sentences (see Section 3 in [the paper](https://arxiv.org/abs/2306.17399)).
 
 Genres are thus equally represented in each fold, and a sequence of sentences is never split between a training set and a validation set.
 
